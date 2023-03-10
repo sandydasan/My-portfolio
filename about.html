@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/png" href="./images/favicon.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Babylonica&family=Cookie&family=Dancing+Script&family=Great+Vibes&family=Merriweather:ital,wght@1,300&family=Mrs+Saint+Delafield&family=Mynerve&family=Poppins:ital,wght@1,100&family=Righteous&family=Rock+Salt&family=Satisfy&family=Zeyada&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--header-->
+    <div class="header">
+        <div class="container">
+            <nav>
+                <h1><span>S</span>anti</h1>
+                <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="about.html">About</a></li>
+                   <li><a href="sevices.html">Services</a></li>
+                   <li><a href="project.html">Project</a></li>
+                   <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--about-->
+    <div class="about">
+        <div class="row-1">
+            <div class="col-1">
+                <img src="./images/girl.jpg">
+            </div>
+            <div class="col-2">
+                <h2>About<span>&nbspMe</span></h2>
+                <p>I'am Santi Dasan and i'am a full stack developer and this is my first portfolio. 
+                    Facilis aliquam cupiditate qui iure omnis amet. Vitae repellendus commodi tempora 
+                    dignissimos veniam reiciendis consequuntur repudiandae, quam atque mollitia quos neque 
+                    laudantium!</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('experiences')">Experiences</p>
+                        <p class="tab-links"  onclick="opentab('education')">Education</p>  
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span></li>
+                            <li>CSS</li>
+                            <li><span>Bootstrap</span></li>
+                            <li>C++</li>
+                            <li><span>Java</span></li>
+                            <li>Javascript</li>
+                            <li><span>Sql</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experiences">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Full Stack Developer  Training at Luminar Institution</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>BCA from Banglore North University</li>
+                            <li><span>2019</span><br>Plus Two from State Board of Kerala</li>
+                            <li><span>2017</span><br>10th from State Board of Kerala</li>
+                            
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+<script>
+    var tablinks =document.getElementsByClassName("tab-links");
+    var tabcontents =document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+    
+</script>
+<div class="end-text">
+    <p>Copyright @2023 All rights reserved | Made with by Santi Dasan</p>
+  </div>
+
+
+</body>
+</html>
